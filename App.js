@@ -1,13 +1,19 @@
 import React from 'react';
-import {View} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import SplashScreen from './src/screens/auth/Splash/SplashScreen';
 
 function App() {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <SplashScreen />
-    </View>
+    </SafeAreaView>
   );
 }
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  },
+});
 export default App;
