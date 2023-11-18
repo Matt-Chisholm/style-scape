@@ -1,19 +1,13 @@
 import React from 'react';
-import {withTheme} from 'react-native-paper';
-import {View, StyleSheet, Text} from 'react-native';
+import {View} from 'react-native';
+import SplashScreen from './src/screens/auth/Splash/SplashScreen';
 
-function App({theme}) {
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View>
+      <SplashScreen />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
