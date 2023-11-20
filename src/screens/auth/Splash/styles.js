@@ -1,14 +1,25 @@
 import {StyleSheet} from 'react-native';
+import colors from '../../../assets/colors';
 
 export default StyleSheet.create({
   container: {
-    backgroundColor: '#FFFFFF',
+    flex: 1,
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#fff',
+    alignItems: 'center',
   },
-  logo: {
+  bg: {
+    flex: 1,
     width: '100%',
-    height: 550,
+    height: '100%',
+    opacity: 0.7,
+  },
+  title: {
+    position: 'absolute',
+    top: 200,
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: colors.primary,
   },
 });

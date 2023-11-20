@@ -1,15 +1,14 @@
-import {Text, View, Image} from 'react-native';
+import {Text, View, ImageBackground, Image} from 'react-native';
 import React from 'react';
-import logo from '../../../assets/images/logo-color.png';
+import bg from '../../../assets/images/bg.jpg';
+
 import styles from './styles';
 
 const SplashScreen = () => {
   return (
     <View style={styles.container}>
-      <Image source={logo} style={styles.logo} />
-      <Text style={styles.text}>
-        The world's leading online furniture retailer
-      </Text>
+      <ImageBackground source={bg} resizeMode="cover" style={styles.bg} />
+      <Text style={styles.title}>StyleScape</Text>
     </View>
   );
 };
