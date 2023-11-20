@@ -8,17 +8,18 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
-  bg: {
-    width: '10%',
-    height: '10%',
+  image: {
+    width: '100%',
+    height: '80%',
     opacity: 0.7,
   },
   title: {
-    position: 'absolute',
-    top: 200,
     fontSize: 50,
-    fontFamily: 'Dosis-Regular',
     fontWeight: 'bold',
+    color: colors.black,
+  },
+  subtitle: {
+    fontSize: 20,
     color: colors.black,
   },
 });
