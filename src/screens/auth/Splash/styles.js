@@ -3,23 +3,22 @@ import colors from '../../../assets/colors';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
     display: 'flex',
     justifyContent: 'center',
     backgroundColor: '#fff',
     alignItems: 'center',
   },
   bg: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
+    width: '10%',
+    height: '10%',
     opacity: 0.7,
   },
   title: {
     position: 'absolute',
     top: 200,
-    fontSize: 30,
+    fontSize: 50,
+    fontFamily: 'Dosis-Regular',
     fontWeight: 'bold',
-    color: colors.primary,
+    color: colors.black,
   },
 });
