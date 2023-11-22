@@ -1,13 +1,26 @@
 import * as React from 'react';
-import {StyleSheet} from 'react-native';
-import {Button} from 'react-native-paper';
+import {StyleSheet, Pressable, View, Text} from 'react-native';
 
 const CustomButton = ({title, onPress}) => (
-  <Button mode="contained" onPress={onPress}>
-    {title}
-  </Button>
+  <Pressable onPress={onPress}>
+    <View style={styles.button}>
+      <Text style={styles.buttonText}>{title}</Text>
+    </View>
+  </Pressable>
 );
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  button: {
+    backgroundColor: '#000',
+    padding: 20,
+    borderRadius: 10,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+});
 
 export default CustomButton;
