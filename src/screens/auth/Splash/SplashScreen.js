@@ -10,7 +10,7 @@ const SplashScreen = () => {
       <Image source={splash} style={styles.image} />
       <Text style={styles.title}>StyleScape</Text>
       <Text style={styles.subtitle}>Beautiful Furniture for you.</Text>
-      <CustomButton title="Get Started" onPress={() => {}} />
+      <CustomButton title="Sign Up" onPress={() => {}} />
       <CustomButton title="Login" onPress={() => {}} />
     </View>
   );
